@@ -1,4 +1,4 @@
-import { getActiveEffect } from "./effect"
+//import { getActiveEffect } from "./effect"
 import { mutableHandler, shalldowReactive } from "./baseHandlers"
 
 export const reactiveMap = new WeakMap()

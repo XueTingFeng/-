@@ -19,9 +19,10 @@ describe("vitest测试", () => {
     obj.name = "fff"
     expect(dummy).toBe("fff")
 
-    //  effect(() => {
-    //     dummy = obj.age
-    //  })
-    //  obj.age = "19"
+    effect(() => {
+      dummy = obj.age
+    })
+    obj.age = 19
+    expect(dummy).toBe(19)
   })
 })
